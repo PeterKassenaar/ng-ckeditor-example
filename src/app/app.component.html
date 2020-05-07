@@ -1,0 +1,12 @@
+<h1>CKEditor 5 in een Angular-project</h1>
+<ckeditor
+  [editor]="Editor"
+  data="<h2>Welkom bij CKEditor 5 voor Angular</h2>"
+  (change)="onChange($event)">
+</ckeditor>
+<button (click)="getText()">Get Text</button>
+<hr>
+<h2>Tekst uit de editor:</h2>
+<div>
+  {{ finalData }}
+</div>
